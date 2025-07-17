@@ -234,7 +234,7 @@ function crushCandies() {
 
         if (score >= 1000) {
             let message = document.getElementById("message");
-           message.innerText = `You win! Moves: ${moveCount}`;
+            document.getElementById("moves").innerText = moveCount;
             message.style.display = "block";
             clearInterval(gameInterval);
         }
