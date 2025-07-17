@@ -94,7 +94,8 @@ function dragEnd() {
             otherTile.src = otherSrc;
         }else {
         moveCount++;
-        document.getElementById("moves").innerText = moveCount;
+        document.getElementById("move-count").innerText = moveCount;
+        document.getElementById("moves").innerText = moveCount; 
     }
     }
     currTile = null;
