@@ -4,6 +4,7 @@ var board = [];
 var rows = 9;
 var columns = 9;
 var score = 0;
+var moveCount =0;
 
 var currTile;
 var otherTile;
@@ -91,7 +92,10 @@ function dragEnd() {
             // Revert swap
             currTile.src = currSrc;
             otherTile.src = otherSrc;
-        }
+        }else {
+        moveCount++;
+        document.getElementById("moves").innerText = moveCount;
+    }
     }
     currTile = null;
     otherTile = null;
